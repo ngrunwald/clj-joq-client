@@ -11,7 +11,7 @@ Clojure implementation of the joq client protocol. See https://github.com/nikopo
   ;; or with a persistent connection
   (def client (create-joq-client))
   (with-joq-client client
-    (joq-cmd :add "code while(1){ print "bazinga\n"; sleep 10; } name=bazinga delay=30"))
+    (joq-cmd :add "code while(1){ print \"bazinga\n\"; sleep 10; } name=bazinga delay=30"))
   (close-joq-client client)
 ```
 
